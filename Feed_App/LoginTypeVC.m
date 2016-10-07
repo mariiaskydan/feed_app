@@ -78,25 +78,13 @@ static NSString *simpleTableIdentifier = @"LoginCell";
         [[VkManager sharedManager] loginToVkFromViewController:self];
         return;
     } else if (self.dataSource.count > 0) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        });
        [self performSegueWithIdentifier:@"showFeed" sender:self];
     }
 }
 
-- (void)showAlertControllerWithTitle:(NSString *)title message:(NSString *)message {
-    UIAlertController * alert=   [UIAlertController
-                                  alertControllerWithTitle:title
-                                  message:message
-                                  preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-                                               handler:^(UIAlertAction * action) {
-                                                   [alert dismissViewControllerAnimated:YES completion:nil];
-                                               }];
-    
-    [alert addAction:ok];
-    [self presentViewController:alert animated:YES completion:nil];
-}
 
 #pragma mark - UITableViewDataSource
 
