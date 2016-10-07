@@ -1,0 +1,30 @@
+PODS:
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FBSDKCoreKit (4.15.1):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.15.1):
+    - FBSDKCoreKit
+  - MBProgressHUD (1.0.0)
+  - VK-ios-sdk (1.4.4)
+
+DEPENDENCIES:
+  - FBSDKCoreKit (~> 4.9)
+  - FBSDKLoginKit
+  - MBProgressHUD
+  - VK-ios-sdk
+
+SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FBSDKCoreKit: fc7fa53d16b095ee3fd53f0cd59f1df8bcbb634d
+  FBSDKLoginKit: 073f79b3b2e762fc6f54a283fe15f45372d59f5f
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  VK-ios-sdk: 296c3be1bb45faf4d9f9a2ca69dcf6ec71d9d4df
+
+PODFILE CHECKSUM: 7a6d44d1480c520cf3d35dc0323296158f0d4156
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--InitalVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InitalVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEj-Vk-z9q">
+                                <state key="normal" title="Log in!"/>
+                                <connections>
+                                    <segue destination="umJ-Qm-Rdm" kind="show" id="X8p-8K-cOK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mariya Dychko Feed App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHj-0D-Xq5">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cEj-Vk-z9q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M0M-mf-0ih"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cEj-Vk-z9q" secondAttribute="bottom" constant="85" id="hey-vc-EKN"/>
+                            <constraint firstItem="tHj-0D-Xq5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tek-3J-4o1"/>
+                            <constraint firstItem="tHj-0D-Xq5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="174" id="xFA-eg-Ab9"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Login TypeVC-->
+        <scene sceneID="QbR-91-ZrO">
+            <objects>
+                <viewController id="umJ-Qm-Rdm" customClass="LoginTypeVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eZC-2d-vrE"/>
+                        <viewControllerLayoutGuide type="bottom" id="193-qK-gQr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GDc-Fq-Ak2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZQD-l1-5Ze">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose ONLY TWO social network type, which you want to log in!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efu-CZ-X02">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Mrp-Mx-SbU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Efu-CZ-X02" secondAttribute="trailing" constant="-16" id="3Hg-6c-Y0o"/>
+                            <constraint firstItem="ZQD-l1-5Ze" firstAttribute="top" secondItem="Efu-CZ-X02" secondAttribute="bottom" constant="8" id="Hg8-O7-rP1"/>
+                            <constraint firstItem="ZQD-l1-5Ze" firstAttribute="leading" secondItem="GDc-Fq-Ak2" secondAttribute="leadingMargin" constant="-16" id="Wx3-yD-2Ov"/>
+                            <constraint firstItem="193-qK-gQr" firstAttribute="top" secondItem="ZQD-l1-5Ze" secondAttribute="bottom" id="bgT-wf-qHP"/>
+                            <constraint firstItem="Efu-CZ-X02" firstAttribute="leading" secondItem="GDc-Fq-Ak2" secondAttribute="leadingMargin" constant="-16" id="dZA-Zh-W2y"/>
+                            <constraint firstItem="Efu-CZ-X02" firstAttribute="top" secondItem="eZC-2d-vrE" secondAttribute="bottom" constant="44" id="ecG-Zy-mPx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZQD-l1-5Ze" secondAttribute="trailing" constant="-16" id="mV5-Nj-NuO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ZQD-l1-5Ze" id="g6H-59-uBm"/>
+                        <segue destination="X5n-Y9-i4C" kind="show" identifier="showFeed" id="qDg-c5-u38"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p4B-js-JTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832.79999999999995" y="136.28185907046478"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="jGj-dD-2Sk">
+            <objects>
+                <viewController id="X5n-Y9-i4C" customClass="FeedVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Lf-g2-pV3"/>
+                        <viewControllerLayoutGuide type="bottom" id="pru-vB-GNq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KAV-Nh-K3g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E9f-ye-Ugi">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="E9f-ye-Ugi" secondAttribute="bottom" id="61o-zx-vEA"/>
+                            <constraint firstItem="E9f-ye-Ugi" firstAttribute="leading" secondItem="KAV-Nh-K3g" secondAttribute="leading" id="7d9-Nj-GPa"/>
+                            <constraint firstItem="E9f-ye-Ugi" firstAttribute="top" secondItem="KAV-Nh-K3g" secondAttribute="top" constant="20" id="m9I-30-Qqf"/>
+                            <constraint firstAttribute="trailing" secondItem="E9f-ye-Ugi" secondAttribute="trailing" id="yc6-kJ-6vB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="E9f-ye-Ugi" id="wL8-36-5Jl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yaO-A1-H1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1520.8" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+</document>
